@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial,sans-serif;
+  
+}
+#noteinput{
+    width: 80%;
+    height: 100px;
+    background-color: none;
+   
+}
+.note{
+   width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.note button{
+    float: right;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.heading{
+    margin-top: 20px;
+}
+
+.right-corner {
+    margin-top: 20px;
+}
+#theme{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   
+  }
+ 
+/* for theme*/
+:root {
+    --background-color: white;
+   --text-color: black;
+  }
+
+  button#theme{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .dark-theme {
+    background-color: black;
+    color: white;
+  }
+  
+  .main-container{
+   margin: 30px 50px 30px 50px;
+   padding: 30px;
+  }
+  .input-container{
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+ button{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    background-color:aqua;
+}
+#owner{
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-left: 100px;
+}
+
+@media (max-width: 1200px) {
+    .main-container {
+        margin: 20px 40px;
+        padding: 20px;
+    }
+    #owner {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-container {
+        margin: 20px 30px;
+        padding: 20px;
+    }
+    .navbar {
+        height: 80px;
+        flex-direction: row;
+        justify-content: center;
+       margin-left:60p;
+        padding: 10px;
+    }
+    .heading, .right-corner {
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #noteinput, .note {
+        width: 90%;
+    }
+    .main-container {
+        margin: 15px 20px;
+        padding: 15px;
+    }
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .heading, .right-corner {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    #noteinput, .note {
+        width: 100%;
+    }
+    .main-container {
+        margin: 10px 10px;
+        padding: 10px;
+    }
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .heading, .right-corner {
+        margin-top: 5px;
+    }
+    #owner {
+        margin-left: 0;
+    }
+    button {
+        width: 80px;
+        height: 25px;
+    }
+   
+}

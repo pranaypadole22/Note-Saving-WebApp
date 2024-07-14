@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="api.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="heading">
+            <h1><i class='bx bx-note'></i> Notes Saving App</h1>
+            <p id="owner">Made by Pranay Padole</p>
+        </div>
+        <div class="right-corner">
+            <button id="theme">
+                <i id="theme-icon" class='bx bx-moon'></i>
+            </button>
+        </div>
+    </div>
+    <div class="main-container">
+    <div class="input-container">
+    <textarea id="noteinput" placeholder="Enter your note here..."></textarea>
+    <br>
+    <button id="inbtn"onclick="addnote()">Add Note</button>
+</div>
+    <h2>Saved notes <i class='bx bx-save'></i></h2>
+    <div id="notes"></div>
+</div>
+    <script src="api.js"></script>
+</body>
+</html>
